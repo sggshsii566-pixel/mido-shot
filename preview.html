@@ -305,7 +305,7 @@ button { font-family: inherit; }
     transition: transform 0.12s ease, border-color 0.15s ease;
 }
 .shot-team-card:active { transform: scale(0.96); }
-@media (hover: hover) { .shot-team-card:hover { border-color: rgba(255, 201, 77, 0.4); } }
+@media (hover: hover) { .shot-team-card:hover { border-color: rgba(108, 184, 255, 0.45); } }
 .shot-team-card-name { font-weight: 700; font-size: 14px; line-height: 1.6; }
 
 .shot-team-head {
@@ -357,7 +357,7 @@ button { font-family: inherit; }
     transition: transform 0.1s ease, border-color 0.15s ease;
 }
 .shot-squad-player:active { transform: scale(0.98); }
-@media (hover: hover) { .shot-squad-player:hover { border-color: rgba(255, 201, 77, 0.4); } }
+@media (hover: hover) { .shot-squad-player:hover { border-color: rgba(108, 184, 255, 0.45); } }
 .shot-player-avatar {
     width: 38px; height: 38px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
     background: var(--bg-2); border: 2px solid var(--line);
@@ -386,7 +386,7 @@ button { font-family: inherit; }
     transition: transform 0.12s ease, border-color 0.15s ease;
 }
 .shot-match-open:active { transform: scale(0.98); }
-@media (hover: hover) { .shot-match-open:hover { border-color: rgba(255, 201, 77, 0.4); } }
+@media (hover: hover) { .shot-match-open:hover { border-color: rgba(108, 184, 255, 0.45); } }
 .shot-match-teams { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; line-height: 1.7; }
 .shot-match-cta { color: var(--gold); font-size: 13px; font-weight: 700; }
 .shot-played { color: var(--muted); font-size: 12.5px; }
@@ -474,8 +474,13 @@ button { font-family: inherit; }
 .shot-pitch-name { font-size: 10px; line-height: 1.4; color: #d7e8dd; word-break: break-word; }
 
 /* ===== \u0627\u0644\u062A\u0631\u062A\u064A\u0628 \u0648\u0627\u0644\u0647\u062F\u0627\u0641\u0648\u0646 ===== */
-.shot-table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden; }
+.shot-table { width: 100%; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden; }
 .shot-table-row, .shot-table tr { border-bottom: 1px solid var(--line-soft); }
+.shot-table-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; }
+.shot-table-row:last-child { border-bottom: none; }
+.shot-table-row .shot-team { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; font-size: 13.5px; }
+.shot-table-row .shot-played { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+.shot-table-row .shot-points { white-space: nowrap; font-size: 13px; }
 .shot-table th { color: var(--muted); font-size: 12px; font-weight: 700; padding: 10px 8px; text-align: start; }
 .shot-table td { padding: 11px 8px; font-size: 13.5px; }
 .shot-rank {
@@ -523,7 +528,7 @@ button { font-family: inherit; }
     transition: transform 0.1s ease, color 0.15s ease, border-color 0.15s ease;
 }
 .shot-star:active { transform: scale(0.9); }
-.shot-star.is-fav { color: var(--gold); background: var(--gold-soft); border-color: rgba(255, 201, 77, 0.4); }
+.shot-star.is-fav { color: var(--gold); background: var(--gold-soft); border-color: rgba(108, 184, 255, 0.45); }
 .shot-star:disabled { opacity: 0.45; cursor: default; }
 .shot-team-head { position: relative; }
 .shot-team-head > .shot-star { position: absolute; top: 12px; inset-inline-end: 12px; }
